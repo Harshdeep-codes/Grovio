@@ -1099,9 +1099,10 @@
           </div>
 
           <div class="col-lg-7">
-            <form onsubmit="sendEmail(); reset(); return false;" action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
+            <form action="https://api.web3forms.com/submit" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
             <!-- <form onsubmit="sendEmail(); reset(); return false;"> -->
               <div class="row gy-4">
+    <input type="hidden" name="access_key" value="39d6d416-a1c6-4c88-888a-96aabe284db5">
 
                 <div class="col-md-6">
                   <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
@@ -1180,22 +1181,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script>
-    function sendEmail(){
-      Email.send({
-        Host : "smtp.gmail.com",
-        Username : "harshdeeps902s@gmail.com",
-        Password : "Harshdeep@29",
-        To : 'grovio.team@gmail.com',
-        From :document.getElementById("email").value,
-        Subject : "New Enquiry",
-        Body : "And this is the body"
-    }).then(
-      message => alert(message)
-    );
-    }
-  </script> -->
+ 
 </body>
 
 </html>
